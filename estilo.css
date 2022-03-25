@@ -62,7 +62,7 @@ body{
 .conteudo{
     width: 100%;
     display: flex;
-    justify-content: flex;
+    justify-content: center;
     position: relative;
 }
 .conteudo-esquerda{
@@ -82,9 +82,10 @@ body{
     padding: 15px 0;
 }
 .stories h4{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: rgb(38, 38, 38, 1);
+    line-height: 14px;
 }
 .stories > div{
     display: flex;
@@ -93,6 +94,10 @@ body{
 }
 .icone-stories{
     position: relative;
+    max-width: 56px;
+}
+.icone-stories div{
+    max-width: 78px;
 }
 .icone-externo{
     width: 56px;
