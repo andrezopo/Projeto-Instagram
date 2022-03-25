@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 935px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 54px;
+    position:relative;
+}
+.barra-topo{
+    display: flex;
+    width: 935px;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    position: fixed;
+    top: 0px;
+    margin: 0px auto;
+    padding-right: 28px;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+.barra-topo div{
+    display: flex;
+    align-items: center;
+}
+.barra-topo .icone{
+    color: rgb(0,0,0);
+    margin-right: 20px;  
+    font-size: 22px;  
+}
+.ultimo-icone{
+    margin-right: 0px;
+    color: rgb(0,0,0);
+    font-size: 22px;  
+}
+.pesquisar{
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    width: 215px;
+    height: 28px;
+    justify-content: center;
+    color: rgb(151,151,151,1);
+}
+.borda{
+    height: 1px;
+    width:100%;
+    background-color: #eaeaea;
+
+}
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: flex;
+    position: relative;
+}
+.conteudo-esquerda{
+    width: 614px;
+    margin-top: 88px;
+    position: relative;
+}
+.stories{
+    width: 108%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #eaeaea;
+    padding: 15px 0;
+}
+.stories h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(38, 38, 38, 1);
+}
+.stories > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icone-stories{
+    position: relative;
+}
+.icone-externo{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+.icone-interno{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+.sidebar{
+    width: 293px;
+    background-color: lightblue;
+    height: 300px;
+    z-index: 1;
+    margin-top:88px;
+}
+.posts{
+    margin-top: 102px;
+    height: 500px;
+    background-color: lightgrey;
+}
