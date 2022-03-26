@@ -17,6 +17,7 @@ body{
     padding-top: 54px;
     position:relative;
 }
+/* Barra do topo fixa */
 .barra-topo{
     display: flex;
     width: 935px;
@@ -53,6 +54,7 @@ body{
     color: rgb(151,151,151,1);
     font-size: 14px;
 }
+/* Fim da barra do topo fixa */
 .borda{
     height: 1px;
     width:100%;
@@ -70,6 +72,7 @@ body{
     margin-top: 88px;
     position: relative;
 }
+/* Stories */
 .stories{
     width: 108%;
     display: flex;
@@ -94,23 +97,23 @@ body{
 }
 .icone-stories{
     position: relative;
-    max-width: 56px;
+    max-width: 66px;
 }
 .icone-stories div{
     max-width: 78px;
 }
 .icone-externo{
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+}
+.icone-interno{
     width: 56px;
     height: 56px;
     border-radius: 28px;
-}
-.icone-interno{
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 5px;
+    left: 5px;
 }
 .setinha{
     position: absolute;
@@ -123,14 +126,9 @@ body{
 .setinha:hover{
     cursor: pointer;
 }
-.sidebar{
-    width: 293px;
-    background-color: lightblue;
-    height: 300px;
-    z-index: 1;
-    position: sticky;
-    top: 54px;
-}
+/* Fim dos stories */
+
+/* Posts da página */
 .posts{
     margin-top: 126px;
 }
@@ -153,10 +151,12 @@ body{
     display: flex;
     align-items: center;
 }
-.topo-posts img{
+.menor-imagem{
     width: 32px;
     height: 32px;
     border-radius: 16px;
+}
+.topo-posts img{
     margin-right: 15px;
 }
 .tres-pontinhos{
@@ -180,8 +180,10 @@ body{
      color: #000000;
      padding: 15px;
  }
- .curtidas h3{
+ h3 {
     font-weight: 500;
+    font-size: 14px;
+    color: #000000;
  }
  .curtidas p{
      font-weight: 300;
@@ -192,3 +194,92 @@ body{
      height: 20px;
      border-radius: 10px;
  }
+ /* Fim dos posts da página */
+
+ /* Barra lateral fixa */
+ .topo-sidebar{
+     display: flex;
+     align-items: center;
+     margin-bottom: 25px;
+ }
+ .imagem-sidebar{
+    position: initial;
+    top: initial;
+    left: initial;
+    margin-right: 18px;
+ }
+ .sidebar{
+    width: 293px;
+    background-color: #fafafa;
+    z-index: 1;
+    position: sticky;
+    top: 54px;
+    padding-top: 108px;
+    padding-left: 30px;
+}
+.sidebar .menor-imagem{
+    margin-right: 10px;
+}
+.sidebar p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8E8E8E;
+}
+.sugestoes > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topo-sugestoes{
+    margin-bottom: 15px;
+}
+h5 {
+    font-size: 12px;
+    font-weight: 500;
+}
+h5:hover{
+    cursor: pointer;
+}
+.sugestao{
+    margin-bottom: 15px;
+}
+.sugestao > div{
+    display: flex;
+    align-items: center;
+}
+.sugestao p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+/* Fim da barra lateral */
+
+/* Cores */
+.cinza{
+    color: #8E8E8E;
+}
+.cinza:hover{
+    cursor:initial;
+}
+.preto{
+    color: #000000;
+}
+.ciano{
+    color: #139EF2;
+
+}
+/* Estilo para larguras inferiores a 935px (sem barra lateral) */
+@media (max-width: 935px){
+  
+
+    
+
+}
+
+/* Estilo para larguras inferiores a 614px */
+@media (max-width: 614px){
+
+
+
+}
