@@ -17,6 +17,10 @@ body{
     padding-top: 54px;
     position:relative;
 }
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
 /* Barra do topo fixa */
 .barra-topo{
     display: flex;
@@ -34,6 +38,13 @@ body{
 .barra-topo div{
     display: flex;
     align-items: center;
+}
+.barra-topo-mobile{
+    width: 100%;
+    display: none;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
 }
 .icone{
     color: rgb(0,0,0);
@@ -220,6 +231,22 @@ body{
  }
  /* Fim dos posts da página */
 
+ .barra-inferior-mobile{
+     width: 100%;
+     display: none;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     height: 54px;
+     background-color: #FFFFFF;
+     align-items: center;
+     justify-content: space-between;
+     padding: 15px;
+ }
+ .barra-inferior-mobile div{
+     overflow-x: visible;
+ }
+
  /* Barra lateral fixa */
  .topo-sidebar{
      display: flex;
@@ -299,7 +326,7 @@ h5:hover{
         width: 100%;
     }
     .conteudo{
-        width: 65.66%;
+        width: 614px;
         justify-content: center;
     }    
      .sidebar{
@@ -312,6 +339,20 @@ h5:hover{
       width: 23%;
       min-width: 180px;
   }
+  .borda-stories-baixo{
+      margin-top: 108px;
+  }
+  .icone-externo{
+      width: 100%;
+      height: auto;
+  }
+  .icone-interno{
+      width: 84.84%;
+      height: auto;
+  }
+  .stories{
+      width: 663.12;
+  }
 
 
 
@@ -319,6 +360,72 @@ h5:hover{
 
 /* Estilo para larguras inferiores a 614px */
 @media (max-width: 614px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    body div{
+        overflow-x: hidden;
+    }
+    .barra-topo{
+        display: none;
+    }
+    .barra-topo-mobile{
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: auto;
+        z-index: 2;
+        background-color: #ffffff;
+        margin: 0px auto;
+    }
+    .barra-topo-mobile div{
+        overflow-x: visible;
+    }
+    .container{
+        padding-top: 0px;
+    }
+    .conteudo{
+        width: 100%;
+    }
+    .conteudo-esquerda{
+        width: 100%;
+        margin-top: 64px;
+    }
+    .stories{
+        width: 108%;
+        border-left: 0px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .setinha{
+        display: none;
+    }
+    .posts{
+        margin-top: 0px;
+    }
+    .post{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .corte-de-imagem{
+        display: none;
+    }
+    .barra-inferior-mobile{
+        display: flex;
+        overflow-y: hidden;
+    }
+    .icone-externo{
+        width: 100%;
+        height: auto;
+    }
+    .icone-interno{
+        width: 84.84%;
+        height: auto;
+    }
+
+
+
 
 
 
